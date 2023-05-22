@@ -29,7 +29,7 @@ $email_from = "info@agilesimulations.co.uk";
 ini_set("SMTP", "websmtp.livemail.co.uk");
 ini_set("sendmail_from", "$email_from");
 
-if (!empty($comments)) {
+if (!empty($message)) {
   mail($tomail, $subject, $message, $headers, '-f'.$email_from);
 }
 
