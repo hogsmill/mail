@@ -16,6 +16,8 @@ $message = "----------------------------\ndate: $date\naction: $subject\nname: $
 
 $f = fopen("mail.txt", "a") or die("Unable to open file!");
 
+echo $message;
+
 fwrite($f, $message);
 
 $headers = array(
